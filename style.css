@@ -1,0 +1,255 @@
+body {
+    margin: 0px auto;
+    /*убираем отступы по умолчанию*/
+    font-family: Roboto, sans-serif;
+    /*Устанавливает семейство шрифта*/
+}
+
+
+/*Контейнер фиксирует габариты*/
+
+.container {
+    box-sizing: border-box;
+    max-width: 1219px;
+    /*максимальная ширина*/
+    padding: 0 55px;
+    /*боковые отступы*/
+    margin: 0 auto;
+}
+
+.header {
+    background: #007765;
+    /*цвет фона*/
+    width: 100%;
+    /*растягивет на всю ширину*/
+    height: 84px;
+    /*высота согласно макета*/
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.logo {
+    float: left;
+    /*выравнивание по левой стороне*/
+    position: relative;
+    /*относительное позиционирование*/
+    top: 20px;
+    /*опустили вниз согласно макета*/
+}
+
+.nav {
+    float: right;
+    /*выравнивание по правой стороне*/
+    position: relative;
+    /*относительное позиционирование*/
+    top: 28px;
+    /*опустили вниз согласно макета*/
+}
+
+.nav ul {
+    list-style: none;
+    /*убираем маркеры списка*/
+    margin: 0;
+    /*убираем верхнее и нижнее поле, равное 1em*/
+    padding: 0;
+    /*убираем левый отступ, равный 40px*/
+}
+
+.nav li {
+    display: inline-block;
+    /*делаем элементы списка строчно-блочными*/
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.nav a {
+    color: #FFFFFF;
+    /*цвет текста меню*/
+    font-size: 24px;
+    /*размер и шрифт текста меню*/
+    text-decoration: none;
+    /*убираем почеркивание текста ссылок*/
+}
+
+
+/*Первая секция*/
+
+.section-1 {
+    background-image: url(img/image.png);
+    background-position: center center;
+    background-size: cover;
+    padding-top: 202px;
+    padding-bottom: 202px;
+    margin-top: 84px;
+    text-align: center;
+}
+
+.title-1 {
+    color: #fff;
+    font-size: 72px;
+    line-height: 83px;
+}
+
+
+/*Вторая секция*/
+
+.section-2 {
+    background: #eeeeee;
+    padding-top: 30px;
+    padding-bottom: 58px;
+}
+
+.title-2 {
+    text-align: center;
+    color: #007765;
+    font-size: 64px;
+    line-height: 75px;
+    /*Задаёт высоту строки текста*/
+    margin-top: 0px;
+    /*Устанавливает величину отступа от верхнего края элемента*/
+    margin-bottom: 30px;
+}
+
+.text-2 {
+    font-size: 32px;
+    line-height: 44px;
+    /*Задаёт высоту строки текста*/
+    padding-top: auto;
+}
+
+
+/*Третья секция*/
+
+.section-3 {
+    background-image: url(img/image_3.png);
+    background-position: center center;
+    background-size: cover;
+    padding-top: 127px;
+    padding-bottom: 128px;
+}
+
+.block-3 {
+    max-width: 893px;
+    margin: 0 108px;
+}
+
+.title-3 {
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    font-style: italic;
+    line-height: 57px;
+    width: 100%;
+}
+
+
+/*Четвертая секция*/
+
+.section-4 {
+    background: #fff;
+    padding-top: 0px;
+    padding-bottom: 49px;
+}
+
+.title-4 {
+    text-align: center;
+    color: #007765;
+    font-size: 64px;
+    line-height: 75px;
+    /*Задаёт высоту строки текста*/
+    margin-top: 48px;
+    /*Устанавливает величину отступа от верхнего края элемента*/
+}
+
+.text-4 {
+    font-size: 32px;
+    line-height: 37px;
+    /*Задаёт высоту строки текста*/
+}
+
+.logo-4 {
+    float: left;
+    /*выравнивание по левой стороне*/
+    padding-right: 48px;
+    margin: 0 auto;
+}
+
+.logo-4:after {
+    /*после использования float необходимо очистить поток*/
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*Пятая секция*/
+
+.section-5 {
+    background: #eeeeee;
+    padding-top: 1px;
+    padding-bottom: 68px;
+    height: auto;
+    /*высота согласно макета*/
+}
+
+.figure {
+    margin: 0;
+    /*Расстояние от края элемента до края другог элемента*/
+    padding: 0;
+    /*Устанавливает значение полей вокруг содержимого элемента*/
+    display: flex;
+    /*Определяет как элемент должен быть показан в документе*/
+    flex-wrap: wrap;
+    /*можно переносить на др.строку*/
+    justify-content: space-between;
+    /*растянули по ширине, крайние блоки прижаты*/
+    align-items: center;
+    /*выравнивание по вертикали*/
+    align-content: space-between;
+    min-height: 600px;
+}
+
+.img {
+    text-align: center;
+    width: 350px;
+    height: 283px;
+}
+
+.foto {
+    width: 168px;
+    height: auto;
+    /*высота согласно макета*/
+}
+
+.name {
+    color: #007765;
+    font-size: 24px;
+    line-height: 29px;
+    margin: auto;
+    /*Устанавливает величину отступа от верхнего края элемента*/
+}
+
+
+/*Footer*/
+
+.footer {
+    background: #333333;
+    /*цвет фона*/
+    width: 100%;
+    /*растягивет на всю ширину*/
+    height: 120px;
+    /*высота согласно макета*/
+    padding-top: 56px;
+}
+
+.text-footer {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+    /*Задаёт высоту строки текста*/
+    max-width: 540px;
+    max-height: 64px;
+    margin: auto;
+}
